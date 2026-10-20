@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+
+
+.lanches{
+    display: grid;/* ATIVA O GRED */
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 200px;
+}
+
+.card{
+    background-color: brown;
+    border-radius: 10px;
+
+}
+
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 100px;){
+    .lanches{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:50px){
+    header{
+        grid-template-columns: 1fr;
+
+    }
+
+.lanches{
+    grid-template-columns: 1fr;
+}
+
+}
+
+
+
+
